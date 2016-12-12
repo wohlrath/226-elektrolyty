@@ -1,1 +1,72 @@
 \section*{Výsledky měření}
+Teplota v místnosti a tedy i teplota roztoků byla \SI{21.7(3)}{\degreeCelsius}.
+
+
+
+
+Jako silný elektrolyt jsme použili \SI{0.01}{M} HCl a jako slabý jsme použili \SI{0.01}{M} \ce{CH_3COOH}.
+
+Změřili jsme měrnou elektrickou vodivost destilované vody.
+Měrnou vodivost destilované vody použité k~přípravě roztoků jsme změrili dvakrát, ještě před měřením roztoků HCl jsme naměřili \SI{1.35}{\micro\siemens\per\centi\metre}, poté mezi měřením HCl a \ce{CH_3COOH} jsme naměřili \SI{1.37}{\micro\siemens\per\centi\metre}.
+Tyto hodnoty jsou také uvedeny v prvním řádku tabulky~\ref{t:vysledky}.
+Po měření \ce{CH_3COOH} destilovaná voda došla a byla doplněna jinou, konduktivitu jsme změřili \SI{1.23}{\micro\siemens\per\centi\metre}
+
+Výsledky jsou shrnuty v tabulce \ref{t:vysledky}.
+První sloupec ($V$) udává, jaký objem roztoku jsme napipetovali do baňky a poté doplnili na \SI{100}{\milli\litre}.
+Molární koncentraci vypočteme
+\begin{equation*}
+c_M = \frac{V}{\SI{100}{\milli\litre}} \cdot \SI{0.01}{M}
+\end{equation*}
+
+Při měření jsme počkali, než se hodnota na konduktometru ustálí. Používali jsme konduktometr Mettler Toledo s přesností \SI{0.5}{\percent}.
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{cc|cc|cc}
+ & & \multicolumn{2}{c|}{\ce{HCl}} & \multicolumn{2}{c}{\ce{CH_3COOH}} \\
+$V$ (\si{\milli\litre}) & $c_M$ (\si{\mol\per\metre\cubed}) & $\sigma$ (\si{\micro\siemens\per\centi\metre}) & $\Lambda$ (\si{\milli\siemens\metre\squared\per\mol}) & $\sigma$ (\si{\micro\siemens\per\centi\metre}) & $\Lambda$ (\si{\milli\siemens\metre\squared\per\mol}) \\
+\hline
+0  & \num{0.0} & \num{1.35} & --- & \num{1.37} & --- \\
+1  & \num{0.1} & \num{37.8} & \num{37.8} & \num{12.6} & \num{12.6} \\
+2  & \num{0.2} & \num{74.8} & \num{37.4} & \num{20.4} & \num{10.2} \\
+4  & \num{0.4} & \num{148} & \num{37.0} & \num{29.4} & \num{7.35} \\
+6  & \num{0.6} & \num{221} & \num{36.8} & \num{36.4} & \num{6.07} \\
+8  & \num{0.8} & \num{303} & \num{37.9} & \num{42.5} & \num{5.31} \\
+10 & \num{1.0} & \num{375} & \num{37.5} & \num{47.7} & \num{4.77} \\
+\end{tabular}
+\caption{}
+\label{t:vysledky}
+\end{tabulka}
+
+
+\begin{graph}[htbp] 
+\centering
+\input{sCl.tex}
+\caption{Závislost konduktivity \ce{HCl} na koncentraci}
+\label{g:sCl}
+\end{graph}
+
+\begin{graph}[htbp] 
+\centering
+\input{lCl.tex}
+\caption{Závislost molární konduktivity \ce{HCl} na odmocnině z koncentrace}
+\label{g:lCl}
+\end{graph}
+
+\begin{graph}[htbp] 
+\centering
+\input{sCH.tex}
+\caption{Závislost konduktivity \ce{CH_3COOH} na koncentraci}
+\label{g:sCH}
+\end{graph}
+
+\begin{graph}[htbp] 
+\centering
+\input{lCH.tex}
+\caption{Závislost molární konduktivity \ce{CH_3COOH} na odmocnině z koncentrace}
+\label{g:lCH}
+\end{graph}
+
+Lineární regresí závislosti molární konduktivity na odmocnině z koncentrace a následnou extrapolací pro $c_M \to 0$ jsme určili pro \ce{HCl} $\Lambda_0=\SI{37.4(2)}{\milli\siemens\metre\squared\per\mole}$ a pro \ce{CH_3COOH} $\Lambda_0=\SI{15.5(10)}{\milli\siemens\metre\squared\per\mole}$, viz diskuze.
+
+Poznámka ke grafům: pokud je v legendě uveden vzorec některé proložené funkce, za $x$ dosazujeme číselnou hodnotu veličiny na ose x v uvedených jednotkách a získáme číselnou hodnotu veličiny na ose y v jejích jednotkách.

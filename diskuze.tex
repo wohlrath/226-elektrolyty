@@ -1,1 +1,33 @@
 \section*{Diskuze}
+Pro zavedení limitní molární konduktivity při nekonečném zředění $\Lambda_0$ je nutný předpoklad, že samotné rozpouštědlo má nulovou konduktivitu.
+Je-li rozpouštědlo vodivé, jde molární konduktivita pro $c_M \to 0$ limitně do nekonečna.
+
+U \ce{HCl} je rozsah měřených konduktivit mnohem vyšší než naměřená konduktivita destilované vody, takže jí můžeme zanedbat.
+
+
+Z grafu \ref{g:sCl} vyplývá, že závislost konduktivity \ce{HCl} na koncentraci je velmi dobře lineární a z grafu \ref{g:lCl} nevyplývá žádná jednoduchá závislost molární konduktivity na koncentraci.
+Závislost není dokonce ani monotónní, což neodpovídá empirickému vzorci \eqref{e:silne}.
+První čtyři hodnoty naznačují klesající trend, pokud bychom proložili přímkou jen je (v grafu přerušovanou čarou), obdrželi bychom hodnotu $\Lambda_0=\SI{38.4(2)}{\milli\siemens\metre\squared\per\mole}$. Tento postup ale považujeme za neoprávněný.
+Chceme-li být konzistentní s teoretickou závislostí, musíme ve vzorci \eqref{e:silne} položit $k=0$, molární konduktivitu brát v celém rozsahu za konstantní a odchylky jednotlivých hodnot považovat za chyby měření.
+Dalším možným vysvětlením je, že empirický vzorec \eqref{e:silne} pro \ce{HCl} prostě neplatí a nebo je konstanta $k$ příliš malá na to, abychom ji změřili našimi prostředky.
+
+
+U \ce{CH_3COOH} jsme podle zadání použili lineární extrapolaci závislosti $\Lambda(\sqrt{c_M})$ (viz graf \ref{g:lCH}, přerušovanou čarou), přestože pro ni podle studijního textu neplatí.
+To je do jisté míry oprávněné, protože závislost je přibližně lineární.
+Když však příslušející závislost $\sigma(c_M)$ vyneseme do grafu (viz graf \ref{g:sCH}, přerušovanou čarou), zjistíme, že vůbec neodpovídá skutečnosti.
+
+Naopak naměřená data jsou velmi dobře aproximovaná funkcí tvaru $\sigma = A(\sqrt{1+B\cdot c_M}-1)$, které odpovídá závislost $\Lambda=A(\sqrt{(1+B\cdot c_M)}-1)/c_M$. Poté by platilo
+\begin{equation}
+\Lambda_0=\lim_{c_M \to 0_+} \Lambda = \frac{A\cdot B}{2} \,.
+\end{equation}
+Jenže zde už není zcela zanedbatelná konduktivita rozpouštědla, proto ji odečítáme od fitovaných hodnot (viz grafy \ref{g:sCH} a \ref{g:lCH}, plnou čarou).
+Když poté přirozeně upravíme definici molární konduktivity
+\begin{equation*}
+\Lambda=\frac{\sigma(c_M)-\sigma(0)}{c_M} \,,
+\end{equation*}
+kde $\sigma(0)$ je konduktivita rozpouštědla, 
+
+
+
+Zjistili jsme, že molární konduktivita silného elektrolytu je přibližně čtyřikrát vyšší než slabého elektrolytu.
+Se zvyšující se koncentrací u slabého elektrolytu velmi rychle klesá, zatímco u silného elektrolytu klesá velmi pomalu, či je dokonce konstantní.

@@ -16,6 +16,7 @@
 \usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{pdfpages}
+\usepackage[version=4]{mhchem}
 \usepackage{url}
 
 \usepackage{siunitx}
@@ -39,19 +40,22 @@
 \begin{document}
 
 \begin{titlepage}
-\includepdf[pages={1}]{./graficos/226-tit.pdf}
+%\includepdf[pages={1}]{./graficos/226-tit.pdf}
 \end{titlepage}
 
 \section*{Pracovní úkoly}
 \begin{enumerate}
-\item ÚKOLY
+\item Změřte měrnou elektrickou vodivost (konduktivitu) destilované vody.
+\item Do odměrných baněk \SI{100}{\milli\litre} napipetujte postupně 1, 2, 4, 6, 8 a \SI{10}{\milli\litre} slabého a silného elektrolytu a doplňte baňky do \SI{100}{\milli\litre} (spodní meniskus hladiny se musí krýt s ryskou).
+\item Změřte konduktivitu připravených vzorků.
+\item Stanovte molární konduktivitu těchto vzorků a znázorněte ji graficky jako funkci $\sqrt{c}$.
+\item Diskutujte rozdíly mezi koncentrační závislostí molární konduktivity slabého a silného elektrolytu.
+\item Lineární extrapolací pro nekonečné zředění (nulovou koncentraci) stanovte $\Lambda_0$.
+\item Kalibraci elektrody pomocí roztoku KCl neprovádějte.
 \end{enumerate}
 
 %Teoretická část
 \input{teorie.tex}
-
-%Podmínky a měřící přístroje
-\input{podminky.tex}
 
 %Výsledky měření
 \input{vysledky.tex}
